@@ -109,8 +109,8 @@ namespace Password_Hashing
                         }
                         catch (Exception ex)
                         {
-                            //throw new Exception(ex.ToString());
-                            lb_error1.Text = ex.ToString();
+                            //throw new Exception(ex.ToString());S
+                            lb_error1.Text = ("Exception occured");
                         }
                         finally
                         {

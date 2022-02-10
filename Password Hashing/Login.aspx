@@ -57,7 +57,7 @@
 &nbsp;&nbsp;&nbsp;
     <br />
            <br />
-        <asp:Label ID="errMsg" runat="server" EnableViewState="False" ></asp:Label>
+        <asp:Label ID="errMsg" runat="server" Visible="false" >Error message here (lblMessage)</asp:Label>
            <br />
            <br />
            <br />

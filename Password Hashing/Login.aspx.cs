@@ -19,7 +19,7 @@ namespace Password_Hashing
     {
         public string success { get; set; }
         string MYDBConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MYDBConnection"].ConnectionString;
-        public string errorMsg { get; set; }
+        public string erroMsg { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -84,6 +84,7 @@ namespace Password_Hashing
                     else
                     {
                         errMsg.Text = "Userid or password is not valid. Please try again.";
+                        errMsg.Visible = true;
                         Response.Redirect("Login.aspx", false);
                     }
                 }
